@@ -1,0 +1,9 @@
+export { default as Hero } from "./Hero";
+export { default as About } from "./About";
+export { default as Gallery } from "./Gallery";
+export { default as HowToOrder } from "./HowToOrder";
+export { default as Testimonials } from "./Testimonials";
+export { default as FAQ } from "./FAQ";
+export { default as Contact } from "./Contact";
+export { default as Footer } from "./Footer";
+export { default as WhatsAppButton } from "./WhatsAppButton";

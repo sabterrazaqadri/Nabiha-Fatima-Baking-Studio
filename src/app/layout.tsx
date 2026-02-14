@@ -1,20 +1,36 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({ 
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfair = Playfair_Display({ 
   subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "Nabiha Fatima Baking Studio | Custom Cakes",
+  description: "Order beautiful custom cakes for birthdays, anniversaries, and special occasions. Handcrafted with love.",
+  keywords: ["custom cakes", "birthday cakes", "anniversary cakes", "home bakery", "cake delivery"],
+  authors: [{ name: "Nabiha Fatima Baking Studio" }],
+  openGraph: {
+    title: "Nabiha Fatima Baking Studio | Custom Cakes",
+    description: "Order beautiful custom cakes for birthdays, anniversaries, and special occasions. Handcrafted with love.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Nabiha Fatima Baking Studio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nabiha Fatima Baking Studio | Custom Cakes",
+    description: "Order beautiful custom cakes for birthdays, anniversaries, and special occasions. Handcrafted with love.",
+  },
 };
 
 export default function RootLayout({
@@ -23,12 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

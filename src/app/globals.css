@@ -1,1 +1,33 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --cream: #FFF8F0;
+    --blush: #FFE5E5;
+    --rose: #FFB6C1;
+    --beige: #F5E6D3;
+    --soft-brown: #D4A574;
+    --text-dark: #4A4A4A;
+    --text-light: #6B6B6B;
+  }
+
+  body {
+    @apply bg-[var(--cream)] text-[var(--text-dark)] antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-semibold;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
