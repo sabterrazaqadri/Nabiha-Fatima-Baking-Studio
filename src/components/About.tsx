@@ -49,7 +49,7 @@ export default function About() {
             className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1588195538326-c5b1e5b80d47?w=800&q=80"
+              src="/icon.jpg"
               alt="Baker creating custom cake"
               fill
               className="object-cover"

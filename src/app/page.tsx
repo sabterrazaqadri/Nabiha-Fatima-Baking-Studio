@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Gallery from "@/components/Gallery";
@@ -11,13 +12,22 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Navbar />
       <Hero />
-      <About />
-      <Gallery />
-      <HowToOrder />
+      <div id="about">
+        <About />
+      </div>
+      <div id="gallery">
+        <Gallery />
+      </div>
+      <div id="how-to-order">
+        <HowToOrder />
+      </div>
       <Testimonials />
       <FAQ />
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
       <Footer />
       <WhatsAppButton />
     </main>

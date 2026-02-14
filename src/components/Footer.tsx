@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Instagram, MessageCircle } from "lucide-react";
+import { Heart, Instagram, MessageCircle, Facebook } from "lucide-react";
 
 const WHATSAPP_NUMBER = "923292159108";
 
@@ -69,6 +69,15 @@ export default function Footer() {
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.facebook.com/people/Nabiha-Fatima-Baking-Studio/61578175738233/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 flex items-center justify-center transition-colors duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-6 h-6" />
               </a>
               <a
                 href="https://instagram.com/nabihafatimabakingstudio"
